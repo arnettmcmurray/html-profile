@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Advanced HTML tutorial with semantic structure and multimedia"
+    />
+    <title>Advanced HTML Assignment</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header role="banner">
+      <h1>Advanced HTML Assignment</h1>
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#article">Article</a></li>
+          <li><a href="#form">Form</a></li>
+          <li><a href="#table">Table</a></li>
+          <li><a href="#media">Media</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+      <!-- Article Section -->
+      <article id="article">
+        <header>
+          <h2>Semantic HTML Overview</h2>
+          <p>
+            <time datetime="2025-06-16">June 16, 2025</time> by Arnett McMurray
+          </p>
+        </header>
+        <section>
+          <h3>Why Semantic HTML?</h3>
+          <p>
+            Semantic HTML improves readability, accessibility, and SEO. Elements
+            like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and
+            <code>&lt;aside&gt;</code> convey meaning beyond presentation.
+          </p>
+          <figure>
+            <img
+              src="https://via.placeholder.com/400x200"
+              alt="Semantic Structure Example"
+            />
+            <figcaption>
+              Figure: Placeholder illustrating semantic layout
+            </figcaption>
+          </figure>
+        </section>
+      </article>
+
+      <!-- Accessible Form -->
+      <section id="form">
+        <h2>Contact Form</h2>
+        <form action="#" method="POST">
+          <fieldset>
+            <legend>Personal Info</legend>
+
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              pattern="[A-Za-z0-9_]+"
+            />
+            <br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <br />
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferences</legend>
+            <label>
+              <input type="radio" name="plan" value="basic" checked />
+              Basic
+            </label>
+            <label>
+              <input type="radio" name="plan" value="premium" />
+              Premium
+            </label>
+          </fieldset>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <!-- Data Table -->
+      <section id="table">
+        <h2>Product Inventory</h2>
+        <table>
+          <caption>
+            Inventory Overview
+          </caption>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>In Stock</th>
+              <th>Sold</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Widget A</td>
+              <td>34</td>
+              <td>120</td>
+              <td>$49.99</td>
+            </tr>
+            <tr>
+              <td>Widget B</td>
+              <td>12</td>
+              <td>75</td>
+              <td>$79.99</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td>46</td>
+              <td>195</td>
+              <td>$129.98</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- Multimedia Content -->
+      <section id="media">
+        <h2>Featured Media</h2>
+        <video width="320" height="240" controls>
+          <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        <audio controls>
+          <source
+            src="https://www.w3schools.com/html/horse.ogg"
+            type="audio/ogg"
+          />
+          <source
+            src="https://www.w3schools.com/html/horse.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <p>&copy; 2025 Arnett McMurray. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Exercises - Advanced HTML</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #333;
+        border-collapse: collapse;
+        padding: 8px;
+      }
+      .media-section {
+        margin-top: 40px;
+      }
+      .form-section,
+      .catalog-section,
+      .media-section {
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Advanced HTML Practice</h1>
+      <nav>
+        <ul>
+          <li><a href="#contact-form">Contact Form</a></li>
+          <li><a href="#product-catalog">Product Catalog</a></li>
+          <li><a href="#media-gallery">Media Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="form-section">
+      <h2>Contact Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="contact-method">Preferred Contact Method:</label>
+          <select id="contact-method" name="contact-method">
+            <option value="email">Email</option>
+            <option value="phone">Phone</option></select
+          ><br /><br />
+
+          <label
+            ><input type="checkbox" name="newsletter" /> Subscribe to
+            newsletter</label
+          >
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Product Catalog Table Section -->
+    <section id="product-catalog" class="catalog-section">
+      <h2>Product Catalog</h2>
+      <table>
+        <caption>
+          Available Products
+        </caption>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Stock</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Eco Hoodie</td>
+            <td>Recycled fabric hoodie with unisex fit</td>
+            <td>$45.00</td>
+            <td>102</td>
+          </tr>
+          <tr>
+            <td>Cotton Tote</td>
+            <td>Reusable tote bag with logo print</td>
+            <td>$15.00</td>
+            <td>58</td>
+          </tr>
+          <tr>
+            <td>Sticker Pack</td>
+            <td>Set of 5 waterproof stickers</td>
+            <td>$5.00</td>
+            <td>220</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Multimedia Gallery Section -->
+    <section id="media-gallery" class="media-section">
+      <h2>Media Gallery</h2>
+      <h3>Embedded Video</h3>
+      <video controls width="600">
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
+        />
+        <track
+          kind="subtitles"
+          src="captions.vtt"
+          srclang="en"
+          label="English"
+        />
+        <p>Your browser does not support video playback.</p>
+      </video>
+
+      <h3>Embedded Audio</h3>
+      <audio controls>
+        <source
+          src="https://www.w3schools.com/html/horse.ogg"
+          type="audio/ogg"
+        />
+        <source
+          src="https://www.w3schools.com/html/horse.mp3"
+          type="audio/mpeg"
+        />
+        <p>Your browser does not support audio playback.</p>
+      </audio>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Advanced HTML Practice</p>
+    </footer>
+  </body>
+</html>
